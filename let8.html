@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="ad" id="ad" />
+    <hr />
+    <button type="button" onclick="kontrol(h)">Kontrol et</button>
+    <div id="tabela"></div>
+    <script>
+      function kontrol() {
+        alert('kontrol ediliyor...')
+        debugger
+        let eleman = document.querySelector('#ad')
+        if (elelman.value == null) {
+          alert('isim girmek zorunludur')
+        } else {
+          if (eleman.value.length < 2) {
+          }
+          alert('güzel isim')
+        }
+      }
+    </script>
+  </body>
+</html>

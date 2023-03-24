@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const vki = (kilo, boy) => {
+        return kilo / (boy * boy)
+      }
+      let b = Number(prompt("Boyunuzu giriniz örnek:1.7"));
+      let k = Number(prompt("Kilonuzu giriniz örnek 60"));
+      let sonuc = vki(k,b);
+      let deger;
+      if(sonuc<=18.5){
+        deger = "zayıfsınız";
+      }
+
+      else if (18.5 < sonuc && sonuc < 24.9) {
+        deger = "normal ağırlıktasınız";
+      }
+      else if (25 < sonuc && sonuc < 29.9){
+        deger = "kilolu";
+      }
+      else if (30 < sonuc && sonuc < 34.9){
+        deger = "1. derece obez";
+      }
+      else if (35 < sonuc && sonuc < 39.9){
+        deger = "2. derece obez";
+      }
+      sonuc=Number(sonuc.toFixed(1));
+      alert(sonuc + " " + deger);
+    </script>
+  </body>
+</html>
+
+

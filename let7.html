@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <from action=" ">
+      <label for="ad">Ad</label>
+      <input type="text" id="ad" name="txtAd" />
+      <br />
+      <label for="">Hobiler</label>
+      <br />
+      <input type="checkbox" name="hobi" class="c" id="atlama" value="atlama" />
+      <label for="atlama">Atlama</label>
+      <br />
+      <input
+        type="checkbox"
+        name="hobi"
+        class="c"
+        id="ziplama"
+        value="ziplama"
+      />
+      <label for="ziplama">Zıplama</label>
+
+      <br />
+      <input type="checkbox" name="hobi" class="c" id="dalma" value="dalma" />
+      <label for="dalma">Dalma</label>
+      <br />
+      <button type="button" onclick="alert('naber');">Kontrol Et</button>
+    </from>
+    <script>
+      function kontrolEt() {
+        let ad = document.getElementById('ad').value
+        let hobi1 = document.getElementsByClassName('c')[0]
+        let hobi2 = document.getElementsByName('hobi')[1]
+        let hpbi3 = document.querySelector('#dalma')
+      }
+    </script>
+  </body>
+</html>
